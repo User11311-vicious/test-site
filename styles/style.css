@@ -1,0 +1,770 @@
+html {
+  background-color: #000000;
+  font-size: 30px;
+  font-family: "Sevilla Decor";
+}
+
+@font-face {
+	font-family: 'Segoe UI Light';
+	src: url('fonts/Segoe_UI_Light.ttf');
+}
+
+.text_effect {
+	font-family: 'Segoe UI Light';
+	color: #000000;
+	font-size: 20px;
+}
+
+.head {
+  font-family: "Sevilla Decor";
+  font-size: 70px;
+  left: 60px;
+  top: 50px;
+  color: #FFFFFF;
+  text-shadow: 2px 5px 8px #08f014;
+}
+
+p, li {
+  font-family: "Sevilla Decor";
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+a {
+  font-family: "Sevilla Decor";
+  font-size: 40px;
+  color: #FFFFFF; 
+}
+
+.image {
+  position:absolute;
+  left:40px;
+  top:50px;
+  max-width: 40%;
+  height: auto;
+}
+
+.animated-gif {
+	width: 40px;
+	height: auto;
+}
+
+.circle-image{
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 5px 2px #f0087c;
+}
+
+.circle-image img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.swap {
+	-webkit-animation-name: swap;
+	animation-name: swap;
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+}
+  @-webkit-keyframes swap {
+	0% {
+	  opacity: 0;
+	  -webkit-transform-origin: 0 100%;
+	  transform-origin: 0 100%;
+	  -webkit-transform: scale(0, 0) translate(-700px, 0px);
+	  transform: scale(0, 0) translate(-700px, 0px);
+	}
+  
+	100% {
+	  opacity: 1;
+	  -webkit-transform-origin: 100% 100%;
+	  transform-origin: 100% 100%;
+	  -webkit-transform: scale(1, 1) translate(0px, 0px);
+	  transform: scale(1, 1) translate(0px, 0px);
+	}
+}
+  @keyframes swap {
+	0% {
+	  opacity: 0;
+	  -webkit-transform-origin: 0 100%;
+	  transform-origin: 0 100%;
+	  -webkit-transform: scale(0, 0) translate(-700px, 0px);
+	  transform: scale(0, 0) translate(-700px, 0px);
+	}
+  
+	100% {
+	  opacity: 1;
+	  -webkit-transform-origin: 100% 100%;
+	  transform-origin: 100% 100%;
+	  -webkit-transform: scale(1, 1) translate(0px, 0px);
+	  transform: scale(1, 1) translate(0px, 0px);
+	}
+}
+
+body {
+	width: 1300px;
+	margin: 400px 50px 10px 450px;
+	background-color: #FFFFFF;
+	border-radius: 60px;
+	padding: 10px 10px 10px 10px;
+}
+
+.block_button_sensors{
+  font-size: 25px;
+  color:#000000;
+  background: #FFFFFF;
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 4px solid #000000;
+  position:absolute;
+  left: 70px;
+  top: 450px;
+}
+
+.block_button_projects{
+  font-size: 25px;
+  color:#000000;
+  background: #FFFFFF;
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 4px solid #000000;
+  position:absolute;
+  left: 70px;
+  top: 550px;
+}
+
+.block_button_company{
+  font-size: 25px;
+  color:#000000;
+  background: #FFFFFF;
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 4px solid #000000;
+  position:absolute;
+  left: 70px;
+  top: 650px;
+}
+
+.tinLeftIn {
+	-webkit-animation-name: tinLeftIn;
+	animation-name: tinLeftIn;
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+}
+  @-webkit-keyframes tinLeftIn {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: scale(1, 1) translateX(-900%);
+	  transform: scale(1, 1) translateX(-900%);
+	}
+  
+	50%,
+	70%,
+	90% {
+	  opacity: 1;
+	  -webkit-transform: scale(1.1, 1.1) translateX(0);
+	  transform: scale(1.1, 1.1) translateX(0);
+	}
+  
+	60%,
+	80%,
+	100% {
+	  opacity: 1;
+	  -webkit-transform: scale(1, 1) translateX(0);
+	  transform: scale(1, 1) translateX(0);
+	}
+}
+  @keyframes tinLeftIn {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: scale(1, 1) translateX(-900%);
+	  transform: scale(1, 1) translateX(-900%);
+	}
+  
+	50%,
+	70%,
+	90% {
+	  opacity: 1;
+	  -webkit-transform: scale(1.1, 1.1) translateX(0);
+	  transform: scale(1.1, 1.1) translateX(0);
+	}
+  
+	60%,
+	80%,
+	100% {
+	  opacity: 1;
+	  -webkit-transform: scale(1, 1) translateX(0);
+	  transform: scale(1, 1) translateX(0);
+	}
+}
+
+.button_info{
+  font-size: 20px;
+  color:#FFFFFF;
+  background: #000000;
+  width: 300px;
+  padding: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+  border-radius: 60px 60px 0px 0px;
+  position:absolute;
+  left: 550px;
+  top: 313px;
+}
+
+.button_info:hover {
+	background-color: #DCDCDC;
+	color: #696969;
+	padding: 32px;
+}
+
+.button_info.active {
+    background-color: #FFFFFF;
+	color: #000000;
+	padding: 32px;
+}
+
+.button_statistic{
+  font-size: 20px;
+  color:#FFFFFF;
+  background: #000000;
+  width: 300px;
+  padding: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+  border-radius: 60px 60px 0px 0px;
+  position:absolute;
+  left: 950px;
+  top: 313px;
+}
+
+.button_statistic:hover {
+	background-color: #DCDCDC;
+	color: #696969;
+	padding: 32px;
+}
+
+.button_statistic.active {
+    background-color: #FFFFFF;
+	color: #000000;
+	padding: 32px;
+}
+
+.button_edit{
+  font-size: 20px;
+  color:#FFFFFF;
+  background: #000000;
+  width: 300px;
+  padding: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+  border-radius: 60px 60px 0px 0px;
+  position:absolute;
+  left: 1350px;
+  top: 313px;
+}
+
+.button_edit:hover {
+	background-color: #DCDCDC;
+	color: #696969;
+	padding: 32px;
+}
+
+.button_edit.active {
+    background-color: #FFFFFF;
+	color: #000000;
+	padding: 32px;
+
+}
+
+.tabcontent {
+    display: none;
+    padding: 30px 15px;
+    border: none;
+    border-top: none;
+}
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-8%);
+	}
+	65%{
+		transform: translateY(4%);
+	}
+	80%{
+		transform: translateY(-4%);
+	}
+	95%{
+		transform: translateY(2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}	
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(10%);
+	}
+	50%{
+		-webkit-transform: translateY(-80%);
+	}
+	65%{
+		-webkit-transform: translateY(5%);
+	}
+	80%{
+		-webkit-transform: translateY(-10%);
+	}
+	95%{
+		-webkit-transform: translateY(2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+.perspectiveDownReturn {
+	-webkit-animation-name: perspectiveDownReturn;
+	animation-name: perspectiveDownReturn;
+	-webkit-animation-delay: 0.25s;
+	-moz-animation-delay: 0.25s;
+	-o-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+	animation-duration: 0.5s;	
+	-webkit-animation-duration: 0.5s;
+}
+  @-webkit-keyframes perspectiveDownReturn {
+	0% {
+	  -webkit-transform-origin: 0 100%;
+	  transform-origin: 0 100%;
+	  -webkit-transform: perspective(800px) rotateX(-180deg);
+	  transform: perspective(800px) rotateX(-180deg);
+	}
+  
+	100% {
+	  -webkit-transform-origin: 0 100%;
+	  transform-origin: 0 100%;
+	  -webkit-transform: perspective(800px) rotateX(0deg);
+	  transform: perspective(800px) rotateX(0deg);
+	}
+}
+  @keyframes perspectiveDownReturn {
+	0% {
+	  -webkit-transform-origin: 0 100%;
+	  transform-origin: 0 100%;
+	  -webkit-transform: perspective(800px) rotateX(-180deg);
+	  transform: perspective(800px) rotateX(-180deg);
+	}
+  
+	100% {
+	  -webkit-transform-origin: 0 100%;
+	  transform-origin: 0 100%;
+	  -webkit-transform: perspective(800px) rotateX(0deg);
+	  transform: perspective(800px) rotateX(0deg);
+	}
+}
+
+.pullUP{
+	animation-name: pullUP;
+	-webkit-animation-name: pullUP;	
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	-o-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+	animation-duration: 2.1s;	
+	-webkit-animation-duration: 2.1s;
+
+	animation-timing-function: initial;	
+	-webkit-animation-timing-function: initial;	
+
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%; 		
+}
+
+@keyframes pullUP {
+	0% {
+		transform: scaleY(0.1);
+	}
+	40% {
+		transform: scaleY(1.02);
+	}
+	60% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(0.98);
+	}				
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(1);
+	}							
+}
+
+@-webkit-keyframes pullUP {
+	0% {
+		-webkit-transform: scaleY(0.1);
+	}
+	40% {
+		-webkit-transform: scaleY(1.02);
+	}
+	60% {
+		-webkit-transform: scaleY(0.98);
+	}
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(0.98);
+	}				
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}		
+}
+
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+
+.temperature_ {
+	position: relative;
+	margin: 10px 10px;
+	padding: 1px;
+	width: 35px;
+	border-radius: 50%;
+	color: #FFFFFF;
+	background-color: #ca1818;
+	font-size: 25px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.temperature- {
+	position: relative;
+	top: 2px;
+	margin: 10px 10px;
+	padding: 1px;
+	width: 35px;
+	border-radius: 50%;
+	color: #FFFFFF;
+	background-color: #0000CD;
+	font-size: 25px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.indent{
+  text-indent: 100px;
+}
+
+@font-face {
+font-family: "Sevilla Decor";  
+src: url("../fonts/Sevilla_Decor.ttf") format("truetype");
+font-style: normal; 
+font-weight: normal; 
+} 
+
+#container {
+	position:relative;
+	width: 800px;
+	height: 600px;
+	left: 100px;
+}
+
+#container_month {
+	position:relative;
+	width: 800px;
+	height: 600px;
+	left: 100px;
+}
+
+#container_year {
+	position:relative;
+	width: 800px;
+	height: 600px;
+	left: 100px;
+}
+
+#temp {
+	position: relative;
+	top: 3px;
+}
+
+#plus_temp {
+	width: 15px;
+	height: 20px;
+	position: relative;
+	bottom: 2px;
+}
+
+#light_pos {
+	position: relative;
+	top: 10px;
+}
+
+#gas_pos {
+	position: relative;
+	top: 3px;
+}
+
+#lamp_pos {
+	position: relative;
+	top: 3px;
+}
+
+#fan_pos {
+	position: relative;
+	top: 8px;
+}
+
+#dust_pos {
+	position: relative;
+	top: 7px;
+}
+
+#noise_pos {
+	position: relative;
+	top: 7px;
+}
+
+#barometer_pos {
+	position: relative;
+	top: 9px;
+}
+
+#edit {
+	position: relative;
+	left: 100px;
+}
+
+/* Кнопка свитч на датчик газа */
+.switch {
+	position: relative;
+	display: inline-block;
+	top: 5px;
+	width: 60px;
+	height: 34px;
+}
+  
+  .switch input {display:none;}
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #808080;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+  
+  input:checked + .slider {
+	background-color: #32CD32;
+}
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+  .slider.round {
+	border-radius: 34px;
+}
+  
+  .slider.round:before {
+	border-radius: 50%;
+}
+/* Кнопка свитч на датчик газа */
+
+/* Кнопка свитч на лампу */
+.switch_l {
+	position: relative;
+	display: inline-block;
+	top: 5px;
+	width: 60px;
+	height: 34px;
+}
+  
+  .switch_l input {display:none;}
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #808080;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+  
+  input:checked + .slider {
+	background-color: #32CD32;
+}
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+  .slider.round {
+	border-radius: 34px;
+}
+  
+  .slider.round:before {
+	border-radius: 50%;
+}
+/* Кнопка свитч на датчик газа */
+
+/* Кнопка свитч на лампу */
+.switch_f {
+	position: relative;
+	display: inline-block;
+	top: 5px;
+	width: 60px;
+	height: 34px;
+}
+  
+  .switch_f input {display:none;}
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #808080;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+  
+  input:checked + .slider {
+	background-color: #32CD32;
+}
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+  .slider.round {
+	border-radius: 34px;
+}
+  
+  .slider.round:before {
+	border-radius: 50%;
+}
+/* Кнопка свитч на датчик газа */

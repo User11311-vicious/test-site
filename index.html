@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/g.ico" type="image/x-icon">
+    <title>Satanic Robotics</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="Матвей Толкунов">
+  </head>
+  <body>
+    <div>
+      <img class="image swap" src="images/j.png" alt="Лучшая компания на рынке умных устройств" title="Satanic Robotics">
+    </div>
+    <button class="block_button_sensors tinLeftIn">
+      Датчики
+    </button>
+    <button class="block_button_projects tinLeftIn">
+      Проекты
+    </button>
+    <button class="block_button_company tinLeftIn">
+      О компании
+    </button>
+
+ <!-- Tab links -->
+    <div>
+      <button class="tablinks button_info slideUp" onclick="openSensors(event, 'info')" id="defaultOpen">
+        <span>Показания датчиков</span>
+      </button>
+      <button class="tablinks button_statistic perspectiveDownReturn" onclick="openSensors(event, 'statistic')">
+        <span>Статистика</span>
+      </button>
+      <button class="tablinks button_edit pullUP" onclick="openSensors(event, 'edit')">
+        <span>Создание датчиков</span>
+      </button>
+    </div>
+
+<!-- Tab content -->
+    <div id="info" class="tabcontent indent">
+      <p class="text_effect">
+        <img id="temp" class="animated-gif" src="images/temperature.gif" alt="Гифка температуры" title="Temperature">
+        Термометр
+        <button class="temperature_">+</button>
+        <input id="plus_temp" cursor="text" type="text" size="1">
+        <button class="temperature-">-</button>
+      </p>
+      <p class="text_effect">
+        <img id= "gas_pos" class="animated-gif" src="images/gas.gif" alt="Гифка датчика газа" title="Gas detector">
+        Датчик газа
+        <label class="switch">
+          <input type="checkbox"><span class="slider round"></span>
+        </label>
+      </p>
+      <p class="text_effect">
+        <img id="light_pos" class="animated-gif" src="images/light.gif" alt="Гифка датчика освещения" title="Light sensor">
+        Датчик освещения: <strong>70 Лк</strong>
+      </p>
+      <p class="text_effect">
+        <img id="lamp_pos" class="animated-gif" src="images/lamp.gif" alt="Гифка лампы" title="Lamp">
+        Лампа
+        <label class="switch_l">
+          <input type="checkbox"><span class="slider round"></span>
+        </label>
+      </p>
+      <p class="text_effect">
+        <img id="fan_pos" class="animated-gif" src="images/fan.gif" alt="Гифка вентилятора" title="Fan">
+        Вентилятор
+        <label class="switch_f">
+          <input type="checkbox"><span class="slider round"></span>
+        </label>
+      </p>
+      <p class="text_effect">
+        <img id="dust_pos" class="animated-gif floating" src="images/dust.png" alt="Гифка датчика пыли" title="Dust sensor">
+        Датчик пыли: <strong>0,05мг/м<sup>3</sup></strong>
+      </p>
+      <p class="text_effect">
+        <img id="noise_pos" class="animated-gif" src="images/noise.gif" alt="Гифка датчика шума" title="Noise sensor">
+        Датчик шума: <strong>45 Дб</strong>
+      </p>
+      <p class="text_effect">
+        <img id="barometer_pos" class="animated-gif" src="images/barometer.gif" alt="Гифка датчика давления" title="Barometer">
+        Барометер: <strong>760 мм рт. ст.</strong>
+      </p>
+    </div>
+    <div id="statistic" class="tabcontent">
+      <p id="container"></p>
+      <p id="container_month"></p>
+      <p id="container_year"></p>
+    </div>
+    <div id="edit" class="tabcontent">
+      <select class= "text_effect" name='Название датчика'>
+        <option value="1">Датчик движения</option>
+        <option value="2">Датчик влажности</option>
+        <option value="3">Сейсмометр</option>
+        <option value="4">Датчик кислорода</option>
+        <option value="5">Олфактометр</option>
+        <option value="6">Датчик дождя</option>
+      </select>
+    </div>
+    <script src="https://cdn.anychart.com/js/latest/anychart-bundle.min.js"></script>
+    <script src="scripts/act.js"></script>
+  </body>
+</html>
